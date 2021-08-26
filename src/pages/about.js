@@ -3,6 +3,7 @@ import React from "react";
 export default function about() {
   return (
     <div>
+      <title>O mnie - Gołębiewski Ubezpieczenia</title>
       <h2 class="text-white mt-0">Kilka słow o mnie</h2>
       <p>
         Jestem agentem ubezpieczeniowym, którego biuro mieści się w Gdańsku.
