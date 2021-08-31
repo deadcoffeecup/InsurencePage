@@ -4,7 +4,9 @@ import Img from "gatsby-image";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
-  //poprawić
+  justify-content: flex-start;
+  margin: 0;
+  padding-top: 0;
 `;
 const Logo = () => {
   const data = useStaticQuery(graphql`
@@ -15,18 +17,15 @@ const Logo = () => {
           fixed {
             ...GatsbyImageSharpFixed
           }
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
         }
       }
     }
   `);
   console.log(data);
   return (
-    <Link to="/">
+    <StyledLink to="/">
       <Img fixed={data.image.childImageSharp.fixed} />
-    </Link>
+    </StyledLink>
   );
 };
 export default Logo;

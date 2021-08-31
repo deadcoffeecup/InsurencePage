@@ -6,11 +6,12 @@ const ContactPage = () => {
   return (
     <Layout>
       <title>Kontakt - Gołębiewski Ubezpieczenia</title>
-      <AppointmentForm />
       <p>
-        Administratorem Pana/Pani danych jest firma Adrian Gołębiewski MetLife z
-        siedzibą w Gdańsku, ul. Rogalińska 11A, 80-809 Gdańsk.
+        Chcesz dowiedzieć się więcej? Spodobała Ci się oferta? Masz jakieś
+        pytania? Napisz już teraz lub zadzwoń!
       </p>
+      <AppointmentForm />
+
       <p>
         Adrian Gołębiewski | Agencja MetLife ul.Grunwaldzka 212, 80-266 Gdańsk
         Nr KNF 11249833/A

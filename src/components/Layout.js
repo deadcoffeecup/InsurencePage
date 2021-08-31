@@ -5,8 +5,8 @@ import Navbar from "./Navbar";
 const GlobalStyle = createGlobalStyle`
   body{
    font-family: "Monospace";
-   background-color: #232129;
-   color: ${(props) => (props.theme === "purple" ? "purple" : "white")};
+   background-color: #f2f2f2; //Metlife Gray
+   color: ${(props) => (props.theme === "black" ? "black" : "gray")};
    padding:0;
    margin:0;
 }`;
@@ -18,12 +18,19 @@ export const StyledWrapper = styled.div`
   display: flex;
   flex-flow: row wrap;
 `;
+export const Header = styled.h1`
+  position: relative;
+  margin-top: 5%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+`;
 
 export function Layout({ children }) {
   return (
     <React.Fragment>
       <Navbar />
-      <GlobalStyle theme="white" />
+      <GlobalStyle theme="black" />
       {children}
     </React.Fragment>
   );
