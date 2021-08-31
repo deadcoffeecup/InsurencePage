@@ -1,9 +1,10 @@
 import React from "react";
+import { Layout } from "../components/Layout";
 import AppointmentForm from "../components/AppointmentForm";
 
-export default function contact() {
+const ContactPage = () => {
   return (
-    <div>
+    <Layout>
       <title>Kontakt - Gołębiewski Ubezpieczenia</title>
       <AppointmentForm />
       <p>
@@ -16,6 +17,7 @@ export default function contact() {
       </p>
       <p>adrian.golebiewski@agencja.metlife.pl</p>
       <p>507 318 688</p>
-    </div>
+    </Layout>
   );
-}
+};
+export default ContactPage;

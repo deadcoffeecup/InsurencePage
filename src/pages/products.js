@@ -1,13 +1,16 @@
 import React from "react";
 import ProductsTable from "../components/ProductsTable";
+import { Layout, StyledWrapper } from "../components/Layout";
 
-function products() {
+const ProductsPage = () => {
   return (
-    <div>
+    <Layout>
       <title>Ofera - Gołębiewski Ubezpieczenia</title>
-      <ProductsTable />
-    </div>
+      <h1>Przyjrzyj się naszej ofercie</h1>
+      <StyledWrapper>
+        <ProductsTable />
+      </StyledWrapper>
+    </Layout>
   );
-}
-
-export default products;
+};
+export default ProductsPage;

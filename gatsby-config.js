@@ -1,3 +1,5 @@
+const path = require(`path`);
+
 module.exports = {
   siteMetadata: {
     siteUrl: "http://www.golebiewskiub.pl",
@@ -11,10 +13,9 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `images`,
+        path: path.join(__dirname, `src`, `images`),
       },
-      __key: "images",
     },
   ],
 };

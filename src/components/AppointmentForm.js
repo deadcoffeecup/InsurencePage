@@ -1,5 +1,20 @@
 import React from "react";
+import styled from "styled-components";
 
+import { StyledWrapper } from "./Layout";
+
+const StyledInput = styled.input`
+  display: flex;
+  border-radius: 10px;
+  border-style: none;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin: 1em;
+  ::placeholder {
+    text-align: center;
+    font-size: 1rem;
+  }
+`;
 class AppointmentForm extends React.Component {
   constructor(props) {
     super(props);
@@ -25,49 +40,43 @@ class AppointmentForm extends React.Component {
 
   render() {
     return (
-      <form
-        onSubmit={this.handleSubmit}
-        action="https://formsubmit.co/adrian.golebiewski@agencja.metLife.pl"
-        method="POST"
-      >
-        <label>
-          Imię:
-          <input
+      <StyledWrapper>
+        <form
+          onSubmit={this.handleSubmit}
+          action="https://formsubmit.co/adrian.golebiewski@agencja.metLife.pl"
+          method="POST"
+        >
+          <StyledInput
             name="name"
             type="text"
             value={this.state.name}
             onChange={this.handleChange}
+            placeholder="Imię"
           />
-        </label>
-        <label>
-          e-mail:
-          <input
+          <StyledInput
             name="email"
             type="email"
             value={this.state.email}
             onChange={this.handleChange}
+            placeholder="e-mail"
           />
-        </label>
-        <label>
-          telefon:
-          <input
+          <StyledInput
             name="phone"
             type="tel"
             value={this.state.phone}
             onChange={this.handleChange}
+            placeholder="telefon"
           />
-        </label>
-        <label>
-          Preferowane godziny kontaktu:
-          <input
+          <StyledInput
             name="message"
             type="text"
             value={this.state.message}
             onChange={this.handleChange}
+            placeholder="preferowane godziny kontaktu"
           />
-        </label>
-        <input type="submit" value="Submit" />
-      </form>
+          <StyledInput type="submit" value="Submit" />
+        </form>
+      </StyledWrapper>
     );
   }
 }

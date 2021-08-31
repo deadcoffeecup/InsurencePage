@@ -1,12 +1,12 @@
 import * as React from "react";
 import AppointmentForm from "../components/AppointmentForm";
-import ProductsTable from "../components/ProductsTable";
+import { StyledWrapper, Layout } from "../components/Layout";
 
-const IndexPage = () => {
-  return (
-    <main>
-      <title>Gołębiewski ubezpieczenia</title>
-      <AppointmentForm />
+const IndexPage = () => (
+  <Layout>
+    <title>Gołębiewski ubezpieczenia</title>
+    <AppointmentForm />
+    <StyledWrapper>
       <footer>
         MetLife Towarzystwo Ubezpieczeń na Życie i Reasekuracji S.A., ul.
         Przemysłowa 26, 00-450 Warszawa, zarejestrowane przez Sąd Rejonowy dla
@@ -15,8 +15,8 @@ const IndexPage = () => {
         21.490.000,00 złotych, wpłacony w całości. MetLife TUnŻiR S.A. jest
         spółką z grupy MetLife, Inc.
       </footer>
-    </main>
-  );
-};
+    </StyledWrapper>
+  </Layout>
+);
 
 export default IndexPage;

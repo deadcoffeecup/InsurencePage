@@ -1,11 +1,12 @@
 import React from "react";
+import { StyledWrapper, Layout } from "../components/Layout";
 
-export default function about() {
+const AboutPage = () => {
   return (
-    <div>
+    <Layout>
       <title>O mnie - Gołębiewski Ubezpieczenia</title>
       <h2 class="text-white mt-0">Kilka słow o mnie</h2>
-      <p>
+      <StyledWrapper>
         Jestem agentem ubezpieczeniowym, którego biuro mieści się w Gdańsku.
         Moja oferta to polisy ubezpieczeniowe firmy MetLife. Oferowane
         ubezpieczenia są atrakcyjne, a także dopasowywane do oczekiwań, potrzeb
@@ -16,7 +17,8 @@ export default function about() {
         przejściowych urazów, chorób zagrażających życiu lub zdrowiu, lub w
         wypadku nagłej utraty życia. Zapewniam miłą i kompetentną obsługę,
         atrakcyjne ceny oraz terminowość. Serdecznie zapraszam do kontaktu.
-      </p>
-    </div>
+      </StyledWrapper>
+    </Layout>
   );
-}
+};
+export default AboutPage;
