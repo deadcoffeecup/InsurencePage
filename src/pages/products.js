@@ -1,12 +1,13 @@
 import React from "react";
 import ProductsTable from "../components/ProductsTable";
-import { Layout, Header } from "../components/Layout";
+import { StyledHeader, StyledSection } from "../components/Layout";
+import Layout from "../components/Layout";
 
 const ProductsPage = () => {
   return (
     <Layout>
       <title>Ofera - Gołębiewski Ubezpieczenia</title>
-      <Header>Oferta</Header>
+      <StyledHeader>Oferta</StyledHeader>
       <ProductsTable />
     </Layout>
   );

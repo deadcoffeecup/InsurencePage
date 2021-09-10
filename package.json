@@ -16,9 +16,10 @@
   "dependencies": {
     "@material-ui/core": "^4.12.3",
     "@material-ui/styles": "^4.11.4",
-    "gatsby": "^2.32.13",
+    "core-js": "^3.17.2",
+    "gatsby": "^2.12.1",
     "gatsby-image": "^3.11.0",
-    "gatsby-link": "^3.11.0",
+    "gatsby-link": "^3.13.0",
     "gatsby-plugin-gatsby-cloud": "^1.0.2",
     "gatsby-plugin-image": "^0.7.2",
     "gatsby-plugin-sharp": "^2.14.4",
@@ -28,6 +29,7 @@
     "material-kit-react": "^1.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "styled-components": "^5.3.1"
+    "styled-components": "^5.3.1",
+    "yarn": "^1.22.11"
   }
 }

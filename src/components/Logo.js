@@ -4,9 +4,8 @@ import Img from "gatsby-image";
 import styled from "styled-components";
 
 const StyledLink = styled(Link)`
-  justify-content: flex-start;
-  margin: 0;
-  padding-top: 0;
+  margin-left: 1rem;
+  flex: 1;
 `;
 const Logo = () => {
   const data = useStaticQuery(graphql`
